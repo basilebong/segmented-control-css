@@ -1,0 +1,92 @@
+.segmented-control {
+  display: flex;
+}
+.segmented-control-btn {
+  flex: 1 0;
+  position: relative;
+  text-align: center;
+  background: #efefef;
+}
+.segmented-control-btn:last-of-type input + label {
+  border-left: none;
+}
+.segmented-control-btn:first-of-type input + label {
+  border-right: none;
+}
+.segmented-control input {
+  opacity: 0;
+  position: absolute;
+}
+.segmented-control input + label {
+  display: block;
+  background-size: 200%;
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  position: relative;
+  z-index: 1;
+  color: #333;
+}
+.segmented-control input + label:before {
+  content: "";
+  background: #8000ff;
+  width: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: -1;
+}
+.segmented-control input[type=radio]:checked + label {
+  color: #ffffff;
+}
+.segmented-control input[type=radio]:checked + label:before {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.rounded.segmented-control .segmented-control-btn:last-of-type {
+  border-radius: 0 5px 5px 0;
+}
+.rounded.segmented-control .segmented-control-btn:first-of-type {
+  border-radius: 5px 0 0 5px;
+}
+.rounded.segmented-control input {
+  opacity: 0;
+  position: absolute;
+}
+.rounded.segmented-control input + label {
+  margin: 2px 3px;
+}
+.rounded.segmented-control input[type=radio]:checked + label:before {
+  border-radius: 5px;
+}
+
+.round.segmented-control .segmented-control-btn:last-of-type {
+  border-radius: 0 25px 25px 0;
+}
+.round.segmented-control .segmented-control-btn:first-of-type {
+  border-radius: 25px 0 0 25px;
+}
+.round.segmented-control input {
+  opacity: 0;
+  position: absolute;
+}
+.round.segmented-control input + label {
+  margin: 2px 3px;
+}
+.round.segmented-control input[type=radio]:checked + label:before {
+  border-radius: 25px;
+}
+
+.perspective.segmented-control input[type=radio]:checked + label:before {
+  -webkit-box-shadow: inset 0px 0px 25px -7px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0px 0px 25px -7px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 25px -7px rgba(0, 0, 0, 0.7);
+}
+
+/*# sourceMappingURL=segmented-control.css.map */

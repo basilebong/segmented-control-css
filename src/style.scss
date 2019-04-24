@@ -1,0 +1,26 @@
+@import "./variables";
+@import "./functions";
+@import "./mixins";
+@import "./base";
+
+.rounded {
+  @include geometry(5px, 2px 3px);
+}
+
+.round {
+  @include geometry(25px, 2px 3px);
+}
+
+.perspective {
+  &.#{$base-class} {
+    input {
+      &[type="radio"]:checked + label {
+        &:before {
+          -webkit-box-shadow: inset 0px 0px 25px -7px rgba(0, 0, 0, 0.7);
+          -moz-box-shadow: inset 0px 0px 25px -7px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 0px 25px -7px rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+  }
+}
