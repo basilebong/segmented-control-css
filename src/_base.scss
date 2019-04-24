@@ -37,7 +37,7 @@
 
       &:before {
         content: "";
-        background: #8000ff;
+        background: map-get($colors, default);
         width: 0;
         opacity: 0;
         transition: 0.3s ease-out;

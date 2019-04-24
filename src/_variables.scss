@@ -1,1 +1,24 @@
 $base-class: segmented-control !default;
+
+$colors: (
+  "default": #7768ff,
+  "red": #f44335,
+  "pink": #e81e61,
+  "purple": #9b26af,
+  "deep-purple": #663ab6,
+  "indigo": #3e50b4,
+  "blue": #2095f2,
+  "light-blue": #04a8f3,
+  "cyan": #00bbd3,
+  "teal": #009587,
+  "green": #4bad4f,
+  "light-green": #8ac249,
+  "lime": #ccdb38,
+  "yellow": #feea39,
+  "amber": #fec007,
+  "orange": #fe9700,
+  "deep-orange": #fe5623,
+  "brown": #785447,
+  "grey": #9d9d9d,
+  "blue-grey": #5f7c89
+);
