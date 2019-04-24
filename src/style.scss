@@ -2,16 +2,17 @@
 @import "./functions";
 @import "./mixins";
 @import "./base";
+@import "./animations";
 
-.rounded {
+.#{$prefix}-rounded {
   @include geometry(5px, 2px 3px);
 }
 
-.round {
+.#{$prefix}-round {
   @include geometry(25px, 2px 3px);
 }
 
-.perspective {
+.#{$prefix}-perspective {
   &.#{$base-class} {
     input {
       &[type="radio"]:checked + label {
