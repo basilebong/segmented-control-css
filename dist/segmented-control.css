@@ -6,6 +6,7 @@
   position: relative;
   text-align: center;
   background: #efefef;
+  z-index: -1;
 }
 .segmented-control-btn:last-of-type input + label {
   border-left: none;
@@ -134,143 +135,143 @@
   box-shadow: inset 0px 0px 25px -7px rgba(0, 0, 0, 0.7);
 }
 
-.segmented-control.default input + label:before {
+.segmented-control.sc-default input + label:before {
   background: #7768ff;
 }
-.segmented-control.default input[type=radio]:checked + label {
+.segmented-control.sc-default input[type=radio]:checked + label {
   color: #000000;
 }
 
-.segmented-control.red input + label:before {
+.segmented-control.sc-red input + label:before {
   background: #f44335;
 }
-.segmented-control.red input[type=radio]:checked + label {
+.segmented-control.sc-red input[type=radio]:checked + label {
   color: #000000;
 }
 
-.segmented-control.pink input + label:before {
+.segmented-control.sc-pink input + label:before {
   background: #e81e61;
 }
-.segmented-control.pink input[type=radio]:checked + label {
+.segmented-control.sc-pink input[type=radio]:checked + label {
   color: #000000;
 }
 
-.segmented-control.purple input + label:before {
+.segmented-control.sc-purple input + label:before {
   background: #9b26af;
 }
-.segmented-control.purple input[type=radio]:checked + label {
+.segmented-control.sc-purple input[type=radio]:checked + label {
   color: #ffffff;
 }
 
-.segmented-control.deep-purple input + label:before {
+.segmented-control.sc-deep-purple input + label:before {
   background: #663ab6;
 }
-.segmented-control.deep-purple input[type=radio]:checked + label {
+.segmented-control.sc-deep-purple input[type=radio]:checked + label {
   color: #ffffff;
 }
 
-.segmented-control.indigo input + label:before {
+.segmented-control.sc-indigo input + label:before {
   background: #3e50b4;
 }
-.segmented-control.indigo input[type=radio]:checked + label {
+.segmented-control.sc-indigo input[type=radio]:checked + label {
   color: #ffffff;
 }
 
-.segmented-control.blue input + label:before {
+.segmented-control.sc-blue input + label:before {
   background: #2095f2;
 }
-.segmented-control.blue input[type=radio]:checked + label {
+.segmented-control.sc-blue input[type=radio]:checked + label {
   color: #000000;
 }
 
-.segmented-control.light-blue input + label:before {
+.segmented-control.sc-light-blue input + label:before {
   background: #04a8f3;
 }
-.segmented-control.light-blue input[type=radio]:checked + label {
+.segmented-control.sc-light-blue input[type=radio]:checked + label {
   color: #ffffff;
 }
 
-.segmented-control.cyan input + label:before {
+.segmented-control.sc-cyan input + label:before {
   background: #00bbd3;
 }
-.segmented-control.cyan input[type=radio]:checked + label {
+.segmented-control.sc-cyan input[type=radio]:checked + label {
   color: #ffffff;
 }
 
-.segmented-control.teal input + label:before {
+.segmented-control.sc-teal input + label:before {
   background: #009587;
 }
-.segmented-control.teal input[type=radio]:checked + label {
+.segmented-control.sc-teal input[type=radio]:checked + label {
   color: #ffffff;
 }
 
-.segmented-control.green input + label:before {
+.segmented-control.sc-green input + label:before {
   background: #4bad4f;
 }
-.segmented-control.green input[type=radio]:checked + label {
+.segmented-control.sc-green input[type=radio]:checked + label {
   color: #ffffff;
 }
 
-.segmented-control.light-green input + label:before {
+.segmented-control.sc-light-green input + label:before {
   background: #8ac249;
 }
-.segmented-control.light-green input[type=radio]:checked + label {
+.segmented-control.sc-light-green input[type=radio]:checked + label {
   color: #000000;
 }
 
-.segmented-control.lime input + label:before {
+.segmented-control.sc-lime input + label:before {
   background: #ccdb38;
 }
-.segmented-control.lime input[type=radio]:checked + label {
+.segmented-control.sc-lime input[type=radio]:checked + label {
   color: #000000;
 }
 
-.segmented-control.yellow input + label:before {
+.segmented-control.sc-yellow input + label:before {
   background: #feea39;
 }
-.segmented-control.yellow input[type=radio]:checked + label {
+.segmented-control.sc-yellow input[type=radio]:checked + label {
   color: #000000;
 }
 
-.segmented-control.amber input + label:before {
+.segmented-control.sc-amber input + label:before {
   background: #fec007;
 }
-.segmented-control.amber input[type=radio]:checked + label {
+.segmented-control.sc-amber input[type=radio]:checked + label {
   color: #000000;
 }
 
-.segmented-control.orange input + label:before {
+.segmented-control.sc-orange input + label:before {
   background: #fe9700;
 }
-.segmented-control.orange input[type=radio]:checked + label {
+.segmented-control.sc-orange input[type=radio]:checked + label {
   color: #ffffff;
 }
 
-.segmented-control.deep-orange input + label:before {
+.segmented-control.sc-deep-orange input + label:before {
   background: #fe5623;
 }
-.segmented-control.deep-orange input[type=radio]:checked + label {
+.segmented-control.sc-deep-orange input[type=radio]:checked + label {
   color: #000000;
 }
 
-.segmented-control.brown input + label:before {
+.segmented-control.sc-brown input + label:before {
   background: #785447;
 }
-.segmented-control.brown input[type=radio]:checked + label {
+.segmented-control.sc-brown input[type=radio]:checked + label {
   color: #ffffff;
 }
 
-.segmented-control.grey input + label:before {
+.segmented-control.sc-grey input + label:before {
   background: #9d9d9d;
 }
-.segmented-control.grey input[type=radio]:checked + label {
+.segmented-control.sc-grey input[type=radio]:checked + label {
   color: #000000;
 }
 
-.segmented-control.blue-grey input + label:before {
+.segmented-control.sc-blue-grey input + label:before {
   background: #5f7c89;
 }
-.segmented-control.blue-grey input[type=radio]:checked + label {
+.segmented-control.sc-blue-grey input[type=radio]:checked + label {
   color: #ffffff;
 }
 

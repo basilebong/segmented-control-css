@@ -27,7 +27,7 @@
 }
 
 @each $colorName, $color in $colors {
-  .#{$base-class}.#{$colorName} {
+  .#{$base-class}.#{$prefix}-#{$colorName} {
     input {
       & + label:before {
         background: $color;
