@@ -6,7 +6,6 @@
   position: relative;
   text-align: center;
   background: #efefef;
-  z-index: -1;
 }
 .segmented-control-btn:last-of-type input + label {
   border-left: none;
