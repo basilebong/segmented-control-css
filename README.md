@@ -1,4 +1,4 @@
-![Segmented Control CSS](./thumb.jpg)
+![Segmented Control CSS](https://github.com/basilebong/segmented-control-css/blob/master/thumb.jpg)
 
 ##### Segmented Control CSS allows you to create IOS style radio buttons. It is easy to use and no javascript is required. Less then 10 Ko and compatible with IE11!
 
