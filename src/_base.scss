@@ -6,6 +6,7 @@
     position: relative;
     text-align: center;
     background: #efefef;
+    height: 100%;
 
     &:last-of-type {
       input + label {
@@ -29,7 +30,7 @@
       height: 100%;
       width: 100%;
       background-size: 200%;
-      padding: 5px;
+      padding: 8px;
       margin: 0;
       cursor: pointer;
       align-items: center;
