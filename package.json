@@ -1,11 +1,19 @@
 {
   "name": "segmented-control-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "IOS like segmented control in pure ss",
   "repository": "https://github.com/basilebong/segmented-control-css",
   "author": "Basile Bong",
   "license": "MIT",
   "private": false,
+  "homepage": "https://basilebong.com/open-source/segmented-control-css",
+  "keywords": [
+    "sgemented control",
+    "css",
+    "web",
+    "sass",
+    "scss"
+  ],
   "scripts": {
     "build": "npx sass ./src/style.scss ./dist/segmented-control.css && npx uglifycss --output ./dist/segmented-control.min.css ./dist/segmented-control.css"
   },
