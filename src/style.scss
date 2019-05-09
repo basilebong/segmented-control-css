@@ -2,16 +2,17 @@
 @import "./functions";
 @import "./mixins";
 @import "./base";
+@import "./animations";
 
-.rounded {
+.#{$prefix}-rounded {
   @include geometry(5px, 2px 3px);
 }
 
-.round {
+.#{$prefix}-round {
   @include geometry(25px, 2px 3px);
 }
 
-.perspective {
+.#{$prefix}-perspective {
   &.#{$base-class} {
     input {
       &[type="radio"]:checked + label {
@@ -20,6 +21,19 @@
           -moz-box-shadow: inset 0px 0px 25px -7px rgba(0, 0, 0, 0.7);
           box-shadow: inset 0px 0px 25px -7px rgba(0, 0, 0, 0.7);
         }
+      }
+    }
+  }
+}
+
+@each $colorName, $color in $colors {
+  .#{$base-class}.#{$prefix}-#{$colorName} {
+    input {
+      & + label:before {
+        background: $color;
+      }
+      &[type="radio"]:checked + label {
+        color: b-or-w($color);
       }
     }
   }
