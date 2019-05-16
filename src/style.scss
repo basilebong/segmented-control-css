@@ -4,16 +4,16 @@
 @import "./base";
 @import "./animations";
 
-.#{$prefix}-rounded {
+#{$prefix}-rounded {
   @include geometry(5px, 2px 3px);
 }
 
-.#{$prefix}-round {
+#{$prefix}-round {
   @include geometry(25px, 2px 3px);
 }
 
-.#{$prefix}-perspective {
-  &.#{$base-class} {
+#{$prefix}-perspective {
+  &#{$base-class} {
     input {
       &[type="radio"]:checked + label {
         &:before {
@@ -27,7 +27,7 @@
 }
 
 @each $colorName, $color in $colors {
-  .#{$base-class}.#{$prefix}-#{$colorName} {
+  #{$base-class}#{$prefix}-#{$colorName} {
     input {
       & + label:before {
         background: $color;

@@ -1,5 +1,5 @@
-.#{$base-class} {
-  &.#{$prefix}-fade {
+#{$base-class} {
+  &#{$prefix}-fade {
     input {
       & + label {
         &:before {
@@ -21,7 +21,7 @@
     }
   }
 
-  &.#{$prefix}-slide {
+  &#{$prefix}-slide {
     input {
       & + label {
         &:before {
@@ -46,7 +46,7 @@
     }
   }
 
-  &.#{$prefix}-zoom {
+  &#{$prefix}-zoom {
     input {
       & + label {
         &:before {
