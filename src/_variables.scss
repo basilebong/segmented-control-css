@@ -1,7 +1,7 @@
-$base-class: ".segmented-control" !default;
-$prefix: ".sc" !default;
+$sc-base-class: ".segmented-control" !default;
+$sc-prefix: ".sc" !default;
 
-$colors: (
+$sc-colors: (
   "default": #7768ff,
   "red": #f44335,
   "pink": #e81e61,

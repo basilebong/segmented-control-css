@@ -1,4 +1,4 @@
-#{$base-class} {
+#{$sc-base-class} {
   display: flex;
 
   &-btn {
@@ -43,7 +43,7 @@
 
       &:before {
         content: "";
-        background: map-get($colors, default);
+        background: map-get($sc-colors, default);
         width: 0;
         height: 100%;
         opacity: 0;
