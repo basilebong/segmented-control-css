@@ -18,7 +18,7 @@
     "build": "npx sass ./src/style.scss ./dist/segmented-control.css && npx uglifycss --output ./dist/segmented-control.min.css ./dist/segmented-control.css"
   },
   "devDependencies": {
-    "sass": "1.19.0",
+    "sass": "1.29.0",
     "uglifycss": "0.0.29"
   },
   "dependencies": {}
