@@ -7,6 +7,7 @@
 .segmented-control {
   display: flex;
 }
+
 .segmented-control-btn {
   position: relative;
   flex: 1 0;
@@ -20,6 +21,7 @@
 .segmented-control-btn:first-of-type input + label {
   border-right: none;
 }
+
 .segmented-control input {
   position: absolute;
   opacity: 0;
@@ -91,6 +93,7 @@
   transition-delay: 0.1s;
   transition-duration: 0.2s;
 }
+
 .segmented-control.sc-zoom input + label::before {
   top: 0;
   left: 0;

@@ -1,7 +1,7 @@
 @import "./variables";
 @import "./functions/functions";
 @import "./mixins/mixins";
-@import "./base";
+@import "./components/components";
 @import "./animations/animations";
 
 #{$sc-prefix}-rounded {
