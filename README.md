@@ -1,5 +1,3 @@
-![Segmented Control CSS](thumb.jpg)
-
 Create IOS Style radio buttons (segmented controls) without any JavaScript code.
 
 [Official demo](https://codepen.io/basilebong/pen/WBrOjY)
@@ -8,10 +6,12 @@ Create IOS Style radio buttons (segmented controls) without any JavaScript code.
 
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
-- [Getting started](#getting-started)
+- [Usage](#usage)
   - [Example](#example)
+  - [Colors](#colors)
+  - [Animations](#animations)
+  - [Border radius](#border-radius)
 - [Support](#support)
-- [Contributing](#contributing)
 - [Author](#author)
 - [License](#license)
 
@@ -43,7 +43,7 @@ You can also use the `unpkg` CDN.
 />
 ```
 
-## Getting started
+## Usage
 
 To make Segmented Control CSS work properly:
 
@@ -76,13 +76,73 @@ To make Segmented Control CSS work properly:
 </form>
 ```
 
+### Colors
+
+To change the color of the segmented controls add the class `.sc-[colorClass]`.
+
+```html
+<div class="segmented-control sc-red">
+  <div class="segmented-control-btn">
+    <input type="radio" id="react" name="frameworkJs" value="react" checked />
+    <label for="react">React</label>
+  </div>
+</div>
+```
+
+|Color name | HEX code | Class |
+|-----------|----------| ----- |
+| default | #7768ff | sc-default |
+| red | #f44335 | sc-red |
+| pink | #e81e61 | sc-pink |
+| purple | #9b26af | sc-purple |
+| deep purple | #663ab6 | sc-deep-purple |
+| indigo | #3e50b4 | sc-indigo |
+| blue | #2095f2 | sc-blue |
+| light blue | #04a8f3 | sc-light-blue |
+| cyan | #00bbd3 | sc-cyan |
+| teal | #009587 | sc-teal |
+| green | #4bad4f | sc-green |
+| light green | #8ac249 | sc-light-green |
+| lime | #ccdb38 | sc-lime |
+| yellow | #feea39 | sc-yellow |
+| amber | #fec007 | sc-amber |
+| orange | #fe9700 | sc-orange |
+| deep orange | #fe5623 | sc-deep-orange |
+| brown | #785447 | sc-brown |
+| grey | #9d9d9d |  sc-grey |
+| blue grey | #5f7c89 | sc-blue-grey |
+
+
+### Animations
+
+To change the animation of the segmented controls use the class `.sc-[animationClass]`. 
+
+```html
+<div class="segmented-control sc-zoom">
+  <div class="segmented-control-btn">
+    <input type="radio" id="react" name="frameworkJs" value="react" checked />
+    <label for="react">React</label>
+  </div>
+</div>
+```
+
+| Name | class |
+| ---- | ----------- |
+| Fade | sc-fade |
+| Slide | sc-slide |
+| Zoom | sc-zoom |
+
+
+### Border radius
+
+| Name | class |
+| ---- | ----- |
+| Rounded | sc-rounded |
+| Round | sc-round |
+
 ## Support
 
 Please open an issue for support.
-
-## Contributing
-
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a feature/branch, add commits, and open a pull request.
 
 ## Author
 
