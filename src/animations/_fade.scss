@@ -1,21 +1,9 @@
 @include create-class("animation", "fade"){
-  input {
-    + label {
-      &::before {
-        top: 0;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        transition: .3s ease-in;
-        transform: translateX(0%);
-      }
-    }
+  @include animation($checked: false){
+    opacity: 0;
+  }
 
-    &[type="radio"]:checked + label {
-      &::before {
-        left: 0;
-        opacity: 1;
-      }
-    }
+  @include animation($checked: true){
+    opacity: 1;
   }
 }
