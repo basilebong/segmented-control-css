@@ -110,44 +110,6 @@
   transform: scale(1);
 }
 
-.sc-rounded.segmented-control .segmented-control-btn:last-of-type {
-  border-radius: 0 5px 5px 0;
-}
-.sc-rounded.segmented-control .segmented-control-btn:first-of-type {
-  border-radius: 5px 0 0 5px;
-}
-.sc-rounded.segmented-control input {
-  position: absolute;
-  opacity: 0;
-}
-.sc-rounded.segmented-control input + label {
-  margin: 2px 3px;
-}
-.sc-rounded.segmented-control input[type=radio]:checked + label::before {
-  border-radius: 5px;
-}
-
-.sc-round.segmented-control .segmented-control-btn:last-of-type {
-  border-radius: 0 25px 25px 0;
-}
-.sc-round.segmented-control .segmented-control-btn:first-of-type {
-  border-radius: 25px 0 0 25px;
-}
-.sc-round.segmented-control input {
-  position: absolute;
-  opacity: 0;
-}
-.sc-round.segmented-control input + label {
-  margin: 2px 3px;
-}
-.sc-round.segmented-control input[type=radio]:checked + label::before {
-  border-radius: 25px;
-}
-
-.sc-perspective.segmented-control input[type=radio]:checked + label::before {
-  box-shadow: inset 0 0 25px -7px rgba(0, 0, 0, 0.7);
-}
-
 .segmented-control.sc-default input + label::before {
   background: #7768ff;
 }
@@ -286,6 +248,44 @@
 }
 .segmented-control.sc-blue-grey input[type=radio]:checked + label {
   color: #ffffff;
+}
+
+.sc-rounded.segmented-control .segmented-control-btn:last-of-type {
+  border-radius: 0 5px 5px 0;
+}
+.sc-rounded.segmented-control .segmented-control-btn:first-of-type {
+  border-radius: 5px 0 0 5px;
+}
+.sc-rounded.segmented-control input {
+  position: absolute;
+  opacity: 0;
+}
+.sc-rounded.segmented-control input + label {
+  margin: 2px 3px;
+}
+.sc-rounded.segmented-control input[type=radio]:checked + label::before {
+  border-radius: 5px;
+}
+
+.sc-round.segmented-control .segmented-control-btn:last-of-type {
+  border-radius: 0 25px 25px 0;
+}
+.sc-round.segmented-control .segmented-control-btn:first-of-type {
+  border-radius: 25px 0 0 25px;
+}
+.sc-round.segmented-control input {
+  position: absolute;
+  opacity: 0;
+}
+.sc-round.segmented-control input + label {
+  margin: 2px 3px;
+}
+.sc-round.segmented-control input[type=radio]:checked + label::before {
+  border-radius: 25px;
+}
+
+.sc-perspective.segmented-control input[type=radio]:checked + label::before {
+  box-shadow: inset 0 0 25px -7px rgba(0, 0, 0, 0.7);
 }
 
 /*# sourceMappingURL=segmented-control.css.map */
