@@ -1,0 +1,21 @@
+#{$sc-base-class}{
+  &-btn{
+    position: relative;
+    flex: 1 0;
+    height: 100%;
+    text-align: center;
+    background: #efefef;
+
+    &:last-of-type {
+      input + label {
+        border-left: none;
+      }
+    }
+
+    &:first-of-type {
+      input + label {
+        border-right: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@include create-class("animation", "slide"){
+  @include animation($checked: false){
+    top: 50%;
+    height: 0;
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  @include animation($checked: true){
+    height: 100%;
+    opacity: 1;
+  }
+}

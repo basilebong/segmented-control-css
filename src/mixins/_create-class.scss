@@ -1,0 +1,13 @@
+/*
+ * Create a class with the correct segmented control prefixes
+ *
+ * $type Can be animation or base
+ * $name The name of your class
+ */
+@mixin create-class($type, $name){
+  @if ($type == "animation") {
+    #{$sc-base-class + $sc-prefix}-#{$name}{
+      @content;
+    }
+  }
+}

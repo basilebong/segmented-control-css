@@ -1,0 +1,9 @@
+@include create-class("animation", "zoom"){
+  @include animation($checked: false){
+    transform: scale(0);
+  }
+
+  @include animation($checked: true){
+    transform: scale(1);
+  }
+}

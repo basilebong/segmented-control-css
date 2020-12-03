@@ -1,0 +1,11 @@
+@mixin animation($checked){
+  @if ($checked){
+    [type="radio"]:checked + label::before{
+      @content;
+    }
+  } @else {
+    input + label::before{
+      @content;
+    }
+  }
+}

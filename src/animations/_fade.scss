@@ -1,0 +1,9 @@
+@include create-class("animation", "fade"){
+  @include animation($checked: false){
+    opacity: 0;
+  }
+
+  @include animation($checked: true){
+    opacity: 1;
+  }
+}

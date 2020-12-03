@@ -1,4 +1,4 @@
-@mixin geometry($border-radius: 5px, $margin: 5px 7px) {
+@mixin border-radius($border-radius: 5px) {
   &#{$sc-base-class} {
     #{$sc-base-class}-btn {
       &:last-of-type {
@@ -14,7 +14,7 @@
       opacity: 0;
 
       + label {
-        margin: $margin;
+        margin: 2px 3px;
       }
 
       &[type="radio"]:checked + label {

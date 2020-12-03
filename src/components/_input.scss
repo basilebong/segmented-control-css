@@ -1,0 +1,44 @@
+#{$sc-base-class}{
+  $default-color: map-get($sc-colors, default);
+
+  input {
+    position: absolute;
+    opacity: 0;
+
+    + label {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin: 0;
+      color: #333;
+      cursor: pointer;
+      transition: $sc-transition-color;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        content: "";
+        transition: $sc-transition-background;
+      }
+    }
+
+    &[type="radio"]:checked + label {
+      color: b-or-w($default-color);
+
+      &::before {
+        background: map-get($sc-colors, default);
+        transition-delay: $sc-transition-delay;
+      }
+    }
+  }
+}

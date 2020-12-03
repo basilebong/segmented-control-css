@@ -1,6 +1,10 @@
 $sc-base-class: ".segmented-control" !default;
 $sc-prefix: ".sc" !default;
 
+$sc-transition-color: .3s ease !default;
+$sc-transition-background: .3s ease !default;
+$sc-transition-delay: .1s !default;
+
 $sc-colors: (
   "default": #7768ff,
   "red": #f44335,

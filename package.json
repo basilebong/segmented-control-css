@@ -15,7 +15,8 @@
     "scss"
   ],
   "scripts": {
-    "build": "npx sass ./src/segmented-control.scss ./dist/segmented-control.css && npx uglifycss --output ./dist/segmented-control.min.css ./dist/segmented-control.css"
+    "build": "npx sass ./src/segmented-control.scss ./dist/segmented-control.css && npx uglifycss --output ./dist/segmented-control.min.css ./dist/segmented-control.css",
+    "version": "yarn build && npm version"
   },
   "devDependencies": {
     "sass": "1.29.0",

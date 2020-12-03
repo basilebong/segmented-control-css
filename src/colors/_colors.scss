@@ -1,0 +1,13 @@
+
+@each $colorName, $color in $sc-colors {
+  #{$sc-base-class}#{$sc-prefix}-#{$colorName} {
+    input {
+      + label::before {
+        background: $color;
+      }
+      &[type="radio"]:checked + label {
+        color: b-or-w($color);
+      }
+    }
+  }
+}

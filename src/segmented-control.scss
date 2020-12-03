@@ -1,38 +1,7 @@
 @import "./variables";
-@import "./functions";
-@import "./mixins";
-@import "./base";
-@import "./animations";
-
-#{$sc-prefix}-rounded {
-  @include geometry(5px, 2px 3px);
-}
-
-#{$sc-prefix}-round {
-  @include geometry(25px, 2px 3px);
-}
-
-#{$sc-prefix}-perspective {
-  &#{$sc-base-class} {
-    input {
-      &[type="radio"]:checked + label {
-        &::before {
-          box-shadow: inset 0 0 25px -7px rgba(0, 0, 0, .7);
-        }
-      }
-    }
-  }
-}
-
-@each $colorName, $color in $sc-colors {
-  #{$sc-base-class}#{$sc-prefix}-#{$colorName} {
-    input {
-      + label::before {
-        background: $color;
-      }
-      &[type="radio"]:checked + label {
-        color: b-or-w($color);
-      }
-    }
-  }
-}
+@import "./functions/functions";
+@import "./mixins/mixins";
+@import "./components/components";
+@import "./animations/animations";
+@import "./colors/colors";
+@import "./border-radius/border-radius";
