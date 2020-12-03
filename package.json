@@ -8,14 +8,14 @@
   "private": false,
   "homepage": "https://basilebong.com/open-source/segmented-control-css",
   "keywords": [
-    "sgemented control",
+    "segmented control",
     "css",
     "web",
     "sass",
     "scss"
   ],
   "scripts": {
-    "build": "npx sass ./src/style.scss ./dist/segmented-control.css && npx uglifycss --output ./dist/segmented-control.min.css ./dist/segmented-control.css"
+    "build": "npx sass ./src/segmented-control.scss ./dist/segmented-control.css && npx uglifycss --output ./dist/segmented-control.min.css ./dist/segmented-control.css"
   },
   "devDependencies": {
     "sass": "1.29.0",

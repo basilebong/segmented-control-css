@@ -1,33 +1,31 @@
-![Segmented Control CSS](https://github.com/basilebong/segmented-control-css/blob/master/thumb.jpg)
+![Segmented Control CSS](thumb.jpg)
 
-##### Segmented Control CSS allows you to create IOS style radio buttons. It is easy to use and no javascript is required. Less then 10 Ko and compatible with IE11!
+Create IOS Style radio buttons (segmented controls) without any JavaScript code.
+
+[Official demo](https://codepen.io/basilebong/pen/WBrOjY)
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
-- [Get started](#get-started)
+- [Getting started](#getting-started)
+  - [Example](#example)
 - [Support](#support)
 - [Contributing](#contributing)
 - [Author](#author)
 - [License](#license)
 
-## Documentation
-
-[Complete documentation](https://basilebong.com/open-source/segmented-control-css)
-
 ## Installation
 
-### Via npm or yarn
-
-```html
+```shell
 npm i segmented-control-css
 ```
 
-```
+```shell
 yarn add segmented-control-css
 ```
 
-Then add the _segmented-control.min.css_ to your _head_. The file is located in the _dist_ folder.
+Then add the `segmented-control.min.css` file to your `<head>`. The file is located in the `dist` folder.
 
 ```html
 <link
@@ -36,11 +34,7 @@ Then add the _segmented-control.min.css_ to your _head_. The file is located in 
 />
 ```
 
-Note: There are also SCSS files available if you prefer to bundle it in your own CSS.
-
-### Via CDN
-
-Add this code to your _head_.
+You can also use the `unpkg` CDN.
 
 ```html
 <link
@@ -49,10 +43,19 @@ Add this code to your _head_.
 />
 ```
 
-## Get started
+## Getting started
 
-⚠️ Each segmented-control-btn needs an input with an id and a label. The "for" attribute
-of the label needs to be the same as the id of the input ⚠️
+To make Segmented Control CSS work properly:
+
+- All options are grouped inside an `.segmented-control` container.
+- Each option should have:
+  - A `.segmented-control-btn` wrapper.
+  - An `<input type="radio">` with an **unique id**.
+  - A `<label>` with a for attribute
+
+⚠️ Each `.segmented-control-btn` needs an **input with an id** and a label **just behind**. The "for" attribute of the label needs to be **the same as the id** of the input. ⚠️
+
+### Example
 
 ```html
 <form>
@@ -72,8 +75,6 @@ of the label needs to be the same as the id of the input ⚠️
   </div>
 </form>
 ```
-
-[Complete documentation](https://basilebong.com/open-source/segmented-control-css)
 
 ## Support
 
