@@ -4,11 +4,4 @@
 @import "./components/components";
 @import "./animations/animations";
 @import "./colors/colors";
-
-#{$sc-prefix}-rounded {
-  @include geometry(5px, 2px 3px);
-}
-
-#{$sc-prefix}-round {
-  @include geometry(25px, 2px 3px);
-}
+@import "./border-radius/border-radius";
