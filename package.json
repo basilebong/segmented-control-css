@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "sass": "1.29.0",
+    "stylelint-config-twbs-bootstrap": "^2.1.0",
     "uglifycss": "0.0.29"
   },
   "dependencies": {}
