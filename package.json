@@ -1,6 +1,6 @@
 {
   "name": "segmented-control-css",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "IOS like segmented control in pure ss",
   "repository": "https://github.com/basilebong/segmented-control-css",
   "author": "Basile Bong",
@@ -23,6 +23,5 @@
     "stylelint": "^13.8.0",
     "stylelint-config-twbs-bootstrap": "^2.1.0",
     "uglifycss": "0.0.29"
-  },
-  "dependencies": {}
+  }
 }
